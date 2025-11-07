@@ -1,0 +1,1221 @@
+2025-11-07 07:57:04,491 - Knowledge - INFO - Created shared MongoDB connection pool
+2025-11-07 07:57:04,796 - Knowledge - INFO - Starting Knowledge Graph processing with 50 threads
+2025-11-07 07:57:04,995 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2025-11-07 07:57:06,565 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-07 07:57:06,748 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2025-11-07 07:57:06,918 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-07 07:57:07,089 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-07 07:57:07,266 - Knowledge - INFO - load persisted knowledge: end
+2025-11-07 07:57:07,428 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2025-11-07 07:57:07,630 - Knowledge - INFO - Redis support added with prefix knowledge:b19508n:
+2025-11-07 07:57:08,232 - Knowledge - INFO - Starting knowledge initialization for ID: cDulDS-b19508n
+2025-11-07 07:57:08,426 - Knowledge - INFO - 🔍 Checking Redis for build_id: b19508n
+2025-11-07 07:57:08,601 - Knowledge - INFO - 🔍 Full session ID: cDulDS-b19508n
+2025-11-07 07:57:08,767 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b19508n:
+2025-11-07 07:57:08,962 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2025-11-07 07:57:09,147 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-07 07:57:09,312 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b19508n
+2025-11-07 07:57:11,223 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-07 07:57:12,954 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2025-11-07 07:57:13,226 - Knowledge - INFO - load persisted docinfo: begin
+2025-11-07 07:57:13,389 - Knowledge - INFO - load persisted docinfo: end
+2025-11-07 07:57:13,592 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2025-11-07 07:57:13,815 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2025-11-07 07:57:13,993 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2025-11-07 07:57:14,140 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b19508n
+2025-11-07 07:57:15,789 - Knowledge - WARNING - ❌ No Redis cache found
+2025-11-07 07:57:15,960 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2025-11-07 07:57:16,121 - Knowledge - INFO - load persisted knowledge: begin
+2025-11-07 07:57:16,291 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2025-11-07 07:57:16,472 - Knowledge - INFO - load persisted knowledge: end
+2025-11-07 07:57:16,669 - Knowledge - INFO - 📁 Disk load complete in 3.49s
+2025-11-07 07:57:16,832 - Knowledge - INFO - Populating ingest queue with source files...
+2025-11-07 07:57:17,645 - Knowledge - INFO - Added 326 files from /app/data/kaviademo4200/40498/b19508n/invoicely-40498 to ingest queue
+2025-11-07 07:57:17,854 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2025-11-07 07:57:18,011 - Knowledge - INFO - knowledge worker kw1 start
+2025-11-07 07:57:18,012 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2025-11-07 07:57:18,175 - Knowledge - INFO - [kw1] Queue=326, InProgress=0, PendingWorkers=0/1, Completed=0/326 (0.0%)
+2025-11-07 07:57:18,294 - Knowledge - INFO - knowledge worker kw2 start
+2025-11-07 07:57:18,294 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2025-11-07 07:57:18,428 - Knowledge - INFO - Dynamic batch size: 100 for queue=326
+2025-11-07 07:57:18,506 - Knowledge - INFO - [kw2] Queue=326, InProgress=0, PendingWorkers=0/2, Completed=0/326 (0.0%)
+2025-11-07 07:57:18,580 - Knowledge - INFO - knowledge worker kw3 start
+2025-11-07 07:57:18,580 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2025-11-07 07:57:18,748 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/env-links.sh
+2025-11-07 07:57:18,826 - Knowledge - INFO - Dynamic batch size: 50 for queue=326
+2025-11-07 07:57:18,909 - Knowledge - INFO - [kw3] Queue=226, InProgress=0, PendingWorkers=1/3, Completed=0/326 (0.0%)
+2025-11-07 07:57:18,996 - Knowledge - INFO - knowledge worker kw4 start
+2025-11-07 07:57:18,996 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2025-11-07 07:57:19,072 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/env-links.sh (ext=.sh, size=199)
+2025-11-07 07:57:19,143 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar-header.tsx
+2025-11-07 07:57:19,258 - Knowledge - INFO - Dynamic batch size: 50 for queue=226
+2025-11-07 07:57:19,384 - Knowledge - INFO - [kw4] Queue=176, InProgress=0, PendingWorkers=2/4, Completed=0/326 (0.0%)
+2025-11-07 07:57:19,456 - Knowledge - INFO - knowledge worker kw5 start
+2025-11-07 07:57:19,456 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2025-11-07 07:57:19,577 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-github-stars.ts
+2025-11-07 07:57:19,696 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-item.tsx
+2025-11-07 07:57:19,769 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/assets.tsx
+2025-11-07 07:57:19,847 - Knowledge - INFO - Dynamic batch size: 30 for queue=176
+2025-11-07 07:57:19,937 - Knowledge - INFO - [kw5] Queue=126, InProgress=0, PendingWorkers=3/5, Completed=0/326 (0.0%)
+2025-11-07 07:57:20,017 - Knowledge - INFO - knowledge worker kw6 start
+2025-11-07 07:57:20,017 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2025-11-07 07:57:20,120 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-github-stars.ts (ext=.ts, size=1195)
+2025-11-07 07:57:20,210 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-item.tsx (ext=.tsx, size=1177)
+2025-11-07 07:57:20,292 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/page.tsx
+2025-11-07 07:57:20,403 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/index.ts
+2025-11-07 07:57:20,494 - Knowledge - INFO - Dynamic batch size: 30 for queue=126
+2025-11-07 07:57:20,639 - Knowledge - INFO - [kw6] Queue=96, InProgress=0, PendingWorkers=4/6, Completed=0/326 (0.0%)
+2025-11-07 07:57:20,677 - Knowledge - INFO - knowledge worker kw7 start
+2025-11-07 07:57:20,677 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2025-11-07 07:57:20,769 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-breakpoint.ts
+2025-11-07 07:57:20,858 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-user.tsx
+2025-11-07 07:57:20,946 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/page.tsx (ext=.tsx, size=134)
+2025-11-07 07:57:21,031 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/index.ts (ext=.ts, size=61)
+2025-11-07 07:57:21,119 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/blog.tsx
+2025-11-07 07:57:21,237 - Knowledge - INFO - Dynamic batch size: 20 for queue=96
+2025-11-07 07:57:21,317 - Knowledge - INFO - [kw7] Queue=66, InProgress=0, PendingWorkers=5/7, Completed=0/326 (0.0%)
+2025-11-07 07:57:21,388 - Knowledge - INFO - knowledge worker kw8 start
+2025-11-07 07:57:21,388 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2025-11-07 07:57:21,508 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-breakpoint.ts (ext=.ts, size=766)
+2025-11-07 07:57:21,622 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/index.ts
+2025-11-07 07:57:21,730 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-logo-asset.tsx
+2025-11-07 07:57:21,804 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/meta-data.ts
+2025-11-07 07:57:21,892 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-refresh.tsx
+2025-11-07 07:57:21,976 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/deleteInvoice.ts
+2025-11-07 07:57:22,085 - Knowledge - INFO - Dynamic batch size: 20 for queue=66
+2025-11-07 07:57:22,168 - Knowledge - INFO - [kw8] Queue=46, InProgress=0, PendingWorkers=6/8, Completed=0/326 (0.0%)
+2025-11-07 07:57:22,277 - Knowledge - INFO - knowledge worker kw9 start
+2025-11-07 07:57:22,277 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2025-11-07 07:57:22,357 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-user.ts
+2025-11-07 07:57:22,432 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/index.ts (ext=.ts, size=107)
+2025-11-07 07:57:22,522 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-signature.asset.tsx
+2025-11-07 07:57:22,593 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/sidebar.tsx
+2025-11-07 07:57:22,685 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sidebar-menu.tsx
+2025-11-07 07:57:22,773 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/deleteInvoice.ts (ext=.ts, size=1412)
+2025-11-07 07:57:22,861 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-file-size-from-base64.ts
+2025-11-07 07:57:22,943 - Knowledge - INFO - Dynamic batch size: 20 for queue=46
+2025-11-07 07:57:23,029 - Knowledge - INFO - [kw9] Queue=26, InProgress=0, PendingWorkers=7/9, Completed=0/326 (0.0%)
+2025-11-07 07:57:23,108 - Knowledge - INFO - knowledge worker kw10 start
+2025-11-07 07:57:23,108 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2025-11-07 07:57:23,190 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-user.ts (ext=.ts, size=184)
+2025-11-07 07:57:23,269 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-loading.tsx
+2025-11-07 07:57:23,365 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/layout.tsx
+2025-11-07 07:57:23,459 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/sidebar.tsx (ext=.tsx, size=537)
+2025-11-07 07:57:23,550 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sidebar-menu.tsx (ext=.tsx, size=1575)
+2025-11-07 07:57:23,629 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/insertInvoice.ts
+2025-11-07 07:57:23,704 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-file-size-from-base64.ts (ext=.ts, size=814)
+2025-11-07 07:57:23,784 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/README.md
+2025-11-07 07:57:23,901 - Knowledge - INFO - Dynamic batch size: 20 for queue=26
+2025-11-07 07:57:23,978 - Knowledge - INFO - [kw10] Queue=6, InProgress=0, PendingWorkers=8/10, Completed=0/326 (0.0%)
+2025-11-07 07:57:24,051 - Knowledge - INFO - knowledge worker kw11 start
+2025-11-07 07:57:24,051 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2025-11-07 07:57:24,129 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-file-upload.ts
+2025-11-07 07:57:24,209 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-loading.tsx (ext=.tsx, size=851)
+2025-11-07 07:57:24,284 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/layout.tsx (ext=.tsx, size=893)
+2025-11-07 07:57:24,362 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-helpers.tsx
+2025-11-07 07:57:24,445 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-feather.tsx
+2025-11-07 07:57:24,564 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/getAllImages.ts
+2025-11-07 07:57:24,647 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-buffer-from-base64.ts
+2025-11-07 07:57:24,761 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/README.md (ext=.md, size=10610)
+2025-11-07 07:57:24,830 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0000_typical_captain_britain.sql
+2025-11-07 07:57:24,931 - Knowledge - INFO - Dynamic batch size: 6 for queue=6
+2025-11-07 07:57:25,111 - Knowledge - INFO - knowledge worker kw12 start
+2025-11-07 07:57:25,121 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2025-11-07 07:57:25,201 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-idb-query.ts
+2025-11-07 07:57:25,315 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-error.tsx
+2025-11-07 07:57:25,436 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/global-error.tsx
+2025-11-07 07:57:25,537 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-helpers.tsx (ext=.tsx, size=915)
+2025-11-07 07:57:25,677 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/fingerprint.tsx
+2025-11-07 07:57:25,785 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/getAllImages.ts (ext=.ts, size=296)
+2025-11-07 07:57:25,873 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-buffer-from-base64.ts (ext=.ts, size=155)
+2025-11-07 07:57:26,013 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/src/index.ts
+2025-11-07 07:57:26,135 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0002_cheerful_iceman.sql
+2025-11-07 07:57:26,372 - Knowledge - INFO - knowledge worker kw13 start
+2025-11-07 07:57:26,372 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2025-11-07 07:57:26,450 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-idb-query.ts (ext=.ts, size=1077)
+2025-11-07 07:57:26,534 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-error.tsx (ext=.tsx, size=761)
+2025-11-07 07:57:26,612 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/global-error.tsx (ext=.tsx, size=665)
+2025-11-07 07:57:26,683 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hourglass-start.tsx
+2025-11-07 07:57:26,763 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/folder-feather.tsx
+2025-11-07 07:57:26,848 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/invoice.ts
+2025-11-07 07:57:26,934 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/effect/error/trpc.ts
+2025-11-07 07:57:27,046 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/src/index.ts (ext=.ts, size=23)
+2025-11-07 07:57:27,121 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0002_cheerful_iceman.sql (ext=.sql, size=68)
+2025-11-07 07:57:27,271 - Knowledge - INFO - knowledge worker kw14 start
+2025-11-07 07:57:27,272 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2025-11-07 07:57:27,391 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-analytics.ts
+2025-11-07 07:57:27,478 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/features.tsx
+2025-11-07 07:57:27,562 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blog/[slug]/page.tsx
+2025-11-07 07:57:27,674 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/github.tsx
+2025-11-07 07:57:27,790 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/folder-feather.tsx (ext=.tsx, size=1524)
+2025-11-07 07:57:27,897 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/updateInvoiceStatus.ts
+2025-11-07 07:57:27,989 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/client-auth.ts
+2025-11-07 07:57:28,089 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/package.json
+2025-11-07 07:57:28,165 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0001_snapshot.json
+2025-11-07 07:57:28,357 - Knowledge - INFO - knowledge worker kw15 start
+2025-11-07 07:57:28,357 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2025-11-07 07:57:28,430 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-analytics.ts (ext=.ts, size=117)
+2025-11-07 07:57:28,506 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/features.tsx (ext=.tsx, size=1349)
+2025-11-07 07:57:28,581 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blog/[slug]/page.tsx (ext=.tsx, size=1704)
+2025-11-07 07:57:28,657 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/github.tsx (ext=.tsx, size=1185)
+2025-11-07 07:57:28,740 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-pen.tsx
+2025-11-07 07:57:28,854 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/updateInvoiceStatus.ts (ext=.ts, size=925)
+2025-11-07 07:57:28,967 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/client-auth.ts (ext=.ts, size=428)
+2025-11-07 07:57:29,053 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/package.json (ext=.json, size=750)
+2025-11-07 07:57:29,156 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0001_snapshot.json (ext=.json, size=26143)
+2025-11-07 07:57:29,332 - Knowledge - INFO - knowledge worker kw16 start
+2025-11-07 07:57:29,332 - Knowledge - INFO - Worker kw17 created using shared MongoDB connection pool
+2025-11-07 07:57:29,398 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-mobile.ts
+2025-11-07 07:57:29,469 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/footer.tsx
+2025-11-07 07:57:29,544 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blogs/page.tsx
+2025-11-07 07:57:29,620 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-check.tsx
+2025-11-07 07:57:29,697 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/priority-medium.tsx
+2025-11-07 07:57:29,784 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteInvoice.ts
+2025-11-07 07:57:29,902 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/auth.ts
+2025-11-07 07:57:29,988 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/react-internal.js
+2025-11-07 07:57:30,105 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/_journal.json
+2025-11-07 07:57:30,313 - Knowledge - INFO - knowledge worker kw17 start
+2025-11-07 07:57:30,313 - Knowledge - INFO - Worker kw18 created using shared MongoDB connection pool
+2025-11-07 07:57:30,393 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-mobile.ts (ext=.ts, size=576)
+2025-11-07 07:57:30,474 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/our-sponser.tsx
+2025-11-07 07:57:30,596 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blogs/page.tsx (ext=.tsx, size=899)
+2025-11-07 07:57:30,677 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/server.tsx
+2025-11-07 07:57:30,750 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/priority-medium.tsx (ext=.tsx, size=1254)
+2025-11-07 07:57:30,830 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteInvoice.ts (ext=.ts, size=415)
+2025-11-07 07:57:30,918 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/auth.ts (ext=.ts, size=950)
+2025-11-07 07:57:31,031 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/react-internal.js (ext=.js, size=1090)
+2025-11-07 07:57:31,133 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/_journal.json (ext=.json, size=501)
+2025-11-07 07:57:31,285 - Knowledge - INFO - knowledge worker kw18 start
+2025-11-07 07:57:31,285 - Knowledge - INFO - Worker kw19 created using shared MongoDB connection pool
+2025-11-07 07:57:31,361 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/default.tsx
+2025-11-07 07:57:31,478 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/header.tsx
+2025-11-07 07:57:31,554 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(error)/error.tsx
+2025-11-07 07:57:31,657 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/server.tsx (ext=.tsx, size=1377)
+2025-11-07 07:57:31,728 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/index.ts
+2025-11-07 07:57:31,817 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/uploadImage.ts
+2025-11-07 07:57:31,888 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/next.config.ts
+2025-11-07 07:57:32,003 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/package.json
+2025-11-07 07:57:32,095 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0002_snapshot.json
+2025-11-07 07:57:32,248 - Knowledge - INFO - knowledge worker kw19 start
+2025-11-07 07:57:32,248 - Knowledge - INFO - Worker kw20 created using shared MongoDB connection pool
+2025-11-07 07:57:32,340 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/vercel.tsx
+2025-11-07 07:57:32,418 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/header.tsx (ext=.tsx, size=1047)
+2025-11-07 07:57:32,513 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(error)/error.tsx (ext=.tsx, size=579)
+2025-11-07 07:57:32,609 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/recipt.tsx
+2025-11-07 07:57:32,710 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sun.tsx
+2025-11-07 07:57:32,787 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/uploadImage.ts (ext=.ts, size=511)
+2025-11-07 07:57:32,868 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/package.json
+2025-11-07 07:57:32,939 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/package.json (ext=.json, size=639)
+2025-11-07 07:57:33,017 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0002_snapshot.json (ext=.json, size=26144)
+2025-11-07 07:57:33,179 - Knowledge - INFO - knowledge worker kw20 start
+2025-11-07 07:57:33,179 - Knowledge - INFO - Worker kw21 created using shared MongoDB connection pool
+2025-11-07 07:57:33,258 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/index.ts
+2025-11-07 07:57:33,367 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/hero.tsx
+2025-11-07 07:57:33,469 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/globals.css
+2025-11-07 07:57:33,540 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/recipt.tsx (ext=.tsx, size=1964)
+2025-11-07 07:57:33,622 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sliders.tsx
+2025-11-07 07:57:33,732 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteImage.ts
+2025-11-07 07:57:33,830 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/package.json (ext=.json, size=3140)
+2025-11-07 07:57:33,913 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/next.js
+2025-11-07 07:57:34,006 - Knowledge - INFO - Worker kw9 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0000_snapshot.json
+2025-11-07 07:57:34,183 - Knowledge - INFO - knowledge worker kw21 start
+2025-11-07 07:57:34,183 - Knowledge - INFO - Worker kw22 created using shared MongoDB connection pool
+2025-11-07 07:57:34,260 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/index.ts (ext=.ts, size=124)
+2025-11-07 07:57:34,348 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/assets/logo-icon.tsx
+2025-11-07 07:57:34,431 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/globals.css (ext=.css, size=6504)
+2025-11-07 07:57:34,524 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/square-wand-sparkle.tsx
+2025-11-07 07:57:34,606 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calender-pen.tsx
+2025-11-07 07:57:34,728 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteImage.ts (ext=.ts, size=385)
+2025-11-07 07:57:34,803 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/content-collections.ts
+2025-11-07 07:57:34,883 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/next.js (ext=.js, size=1313)
+2025-11-07 07:57:34,997 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0000_snapshot.json (ext=.json, size=8221)
+2025-11-07 07:57:35,173 - Knowledge - INFO - knowledge worker kw22 start
+2025-11-07 07:57:35,173 - Knowledge - INFO - Worker kw23 created using shared MongoDB connection pool
+2025-11-07 07:57:35,277 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/deleteInvoiceModal.tsx
+2025-11-07 07:57:35,351 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/assets/logo-icon.tsx (ext=.tsx, size=369)
+2025-11-07 07:57:35,427 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/layout.tsx
+2025-11-07 07:57:35,551 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-x-mark.tsx
+2025-11-07 07:57:35,630 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calender-pen.tsx (ext=.tsx, size=1527)
+2025-11-07 07:57:35,741 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/posthog.ts
+2025-11-07 07:57:35,833 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/content-collections.ts (ext=.ts, size=1040)
+2025-11-07 07:57:35,906 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/base.js
+2025-11-07 07:57:36,159 - Knowledge - INFO - knowledge worker kw23 start
+2025-11-07 07:57:36,160 - Knowledge - INFO - Worker kw24 created using shared MongoDB connection pool
+2025-11-07 07:57:36,237 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/updateStatusModal.tsx
+2025-11-07 07:57:36,348 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/create-invoice.ts
+2025-11-07 07:57:36,431 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation.ts
+2025-11-07 07:57:36,512 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-x-mark.tsx (ext=.tsx, size=1392)
+2025-11-07 07:57:36,595 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-ban.tsx
+2025-11-07 07:57:36,669 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/posthog.ts (ext=.ts, size=304)
+2025-11-07 07:57:36,752 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/components.json
+2025-11-07 07:57:36,824 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/base.js (ext=.js, size=653)
+2025-11-07 07:57:36,984 - Knowledge - INFO - knowledge worker kw24 start
+2025-11-07 07:57:36,984 - Knowledge - INFO - Worker kw25 created using shared MongoDB connection pool
+2025-11-07 07:57:37,090 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/index.tsx
+2025-11-07 07:57:37,170 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/edit-invoice-page.ts
+2025-11-07 07:57:37,253 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation.ts (ext=.ts, size=328)
+2025-11-07 07:57:37,330 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gear.tsx
+2025-11-07 07:57:37,412 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box-plus.tsx
+2025-11-07 07:57:37,494 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/manage-assets/getImagesWithKey.ts
+2025-11-07 07:57:37,630 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/components.json (ext=.json, size=427)
+2025-11-07 07:57:37,748 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/README.md
+2025-11-07 07:57:37,905 - Knowledge - INFO - knowledge worker kw25 start
+2025-11-07 07:57:37,905 - Knowledge - INFO - Worker kw26 created using shared MongoDB connection pool
+2025-11-07 07:57:37,980 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/theme-switch.tsx
+2025-11-07 07:57:38,060 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/edit-invoice-page.ts (ext=.ts, size=211)
+2025-11-07 07:57:38,129 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/routers/_app.ts
+2025-11-07 07:57:38,204 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-download.tsx
+2025-11-07 07:57:38,303 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box-plus.tsx (ext=.tsx, size=1719)
+2025-11-07 07:57:38,395 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/manage-assets/getImagesWithKey.ts (ext=.ts, size=555)
+2025-11-07 07:57:38,473 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.edge.config.ts
+2025-11-07 07:57:38,564 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/README.md (ext=.md, size=72)
+2025-11-07 07:57:38,606 - Knowledge - INFO - [LLM_CALL] Completed: 0000_typical_captain_britain.sql:chunk1, Duration: 2620ms, PromptTokens: 1852, CompletionTokens: 142, Cost: $0.00000
+2025-11-07 07:57:38,759 - Knowledge - INFO - knowledge worker kw26 start
+2025-11-07 07:57:38,759 - Knowledge - INFO - Worker kw27 created using shared MongoDB connection pool
+2025-11-07 07:57:38,843 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/theme-switch.tsx (ext=.tsx, size=1791)
+2025-11-07 07:57:38,927 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/onedollarstats-provider.tsx
+2025-11-07 07:57:39,003 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/routers/_app.ts (ext=.ts, size=346)
+2025-11-07 07:57:39,084 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calendar-check.tsx
+2025-11-07 07:57:39,168 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/eye-scanner.tsx
+2025-11-07 07:57:39,250 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-to-image.ts
+2025-11-07 07:57:39,332 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.edge.config.ts (ext=.ts, size=801)
+2025-11-07 07:57:39,410 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/package.json
+2025-11-07 07:57:39,501 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0000_typical_captain_britain.sql
+2025-11-07 07:57:39,666 - Knowledge - INFO - knowledge worker kw27 start
+2025-11-07 07:57:39,666 - Knowledge - INFO - Worker kw28 created using shared MongoDB connection pool
+2025-11-07 07:57:39,730 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/slider.tsx
+2025-11-07 07:57:39,805 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/onedollarstats-provider.tsx (ext=.tsx, size=459)
+2025-11-07 07:57:39,917 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/uploadImage.ts
+2025-11-07 07:57:39,999 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calendar-check.tsx (ext=.tsx, size=1547)
+2025-11-07 07:57:40,100 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/star.tsx
+2025-11-07 07:57:40,182 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-to-image.ts (ext=.ts, size=1200)
+2025-11-07 07:57:40,260 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/tsconfig.json
+2025-11-07 07:57:40,355 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/package.json (ext=.json, size=155)
+2025-11-07 07:57:40,478 - Knowledge - INFO - Processing batch of 6 files
+2025-11-07 07:57:40,664 - Knowledge - INFO - knowledge worker kw28 start
+2025-11-07 07:57:40,664 - Knowledge - INFO - Worker kw29 created using shared MongoDB connection pool
+2025-11-07 07:57:40,744 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/slider.tsx (ext=.tsx, size=1947)
+2025-11-07 07:57:40,821 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/jotai-provider.tsx
+2025-11-07 07:57:40,900 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/index.ts
+2025-11-07 07:57:40,985 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/database.tsx
+2025-11-07 07:57:41,064 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/star.tsx (ext=.tsx, size=1180)
+2025-11-07 07:57:41,143 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/generate-invoice-name.ts
+2025-11-07 07:57:41,255 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/tsconfig.json (ext=.json, size=793)
+2025-11-07 07:57:41,350 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/nextjs.json
+2025-11-07 07:57:41,432 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0000_typical_captain_britain.sql
+2025-11-07 07:57:41,583 - Knowledge - INFO - knowledge worker kw29 start
+2025-11-07 07:57:41,584 - Knowledge - INFO - Worker kw30 created using shared MongoDB connection pool
+2025-11-07 07:57:41,665 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/badge.tsx
+2025-11-07 07:57:41,749 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/jotai-provider.tsx (ext=.tsx, size=380)
+2025-11-07 07:57:41,868 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/index.ts (ext=.ts, size=343)
+2025-11-07 07:57:41,943 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-alert.tsx
+2025-11-07 07:57:42,054 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/image-sparkle.tsx
+2025-11-07 07:57:42,136 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/generate-invoice-name.ts (ext=.ts, size=397)
+2025-11-07 07:57:42,253 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/README.md
+2025-11-07 07:57:42,328 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/nextjs.json (ext=.json, size=272)
+2025-11-07 07:57:42,420 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0002_cheerful_iceman.sql
+2025-11-07 07:57:42,576 - Knowledge - INFO - knowledge worker kw30 start
+2025-11-07 07:57:42,667 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tooltip.tsx
+2025-11-07 07:57:42,753 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/react-scan-provider.tsx
+2025-11-07 07:57:42,863 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/deleteImage.ts
+2025-11-07 07:57:42,945 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hardrive.tsx
+2025-11-07 07:57:43,021 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/trash.tsx
+2025-11-07 07:57:43,101 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-from-base64.ts
+2025-11-07 07:57:43,183 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/README.md (ext=.md, size=1450)
+2025-11-07 07:57:43,283 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/react-library.json
+2025-11-07 07:57:43,363 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0001_snapshot.json
+2025-11-07 07:57:43,529 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tooltip.tsx (ext=.tsx, size=1861)
+2025-11-07 07:57:43,608 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/react-scan-provider.tsx (ext=.tsx, size=185)
+2025-11-07 07:57:43,688 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/listImages.ts
+2025-11-07 07:57:43,791 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hardrive.tsx (ext=.tsx, size=1380)
+2025-11-07 07:57:43,869 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/trash.tsx (ext=.tsx, size=1940)
+2025-11-07 07:57:43,945 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-from-base64.ts (ext=.ts, size=1083)
+2025-11-07 07:57:44,022 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.server.config.ts
+2025-11-07 07:57:44,094 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/react-library.json (ext=.json, size=136)
+2025-11-07 07:57:44,171 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/_journal.json
+2025-11-07 07:57:44,240 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/popover.tsx
+2025-11-07 07:57:44,324 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/pdf-worker-provider.tsx
+2025-11-07 07:57:44,401 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/listImages.ts (ext=.ts, size=1583)
+2025-11-07 07:57:44,518 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-check.tsx
+2025-11-07 07:57:44,610 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/signature.tsx
+2025-11-07 07:57:44,692 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-blob.tsx
+2025-11-07 07:57:44,766 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.server.config.ts (ext=.ts, size=646)
+2025-11-07 07:57:44,841 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/base.json
+2025-11-07 07:57:44,925 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0002_snapshot.json
+2025-11-07 07:57:44,998 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/popover.tsx (ext=.tsx, size=1639)
+2025-11-07 07:57:45,084 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/pdf-worker-provider.tsx (ext=.tsx, size=411)
+2025-11-07 07:57:45,155 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/editInvoice.ts
+2025-11-07 07:57:45,234 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-check.tsx (ext=.tsx, size=1181)
+2025-11-07 07:57:45,316 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/scribble-arrow-to-right.tsx
+2025-11-07 07:57:45,395 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-blob.tsx (ext=.tsx, size=959)
+2025-11-07 07:57:45,473 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/eslint.config.mjs
+2025-11-07 07:57:45,556 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/base.json (ext=.json, size=500)
+2025-11-07 07:57:45,632 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/meta/0000_snapshot.json
+2025-11-07 07:57:45,704 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/checkbox.tsx
+2025-11-07 07:57:45,787 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/tanstack-provider.tsx
+2025-11-07 07:57:45,892 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/getInvoice.ts
+2025-11-07 07:57:46,010 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-tree.tsx
+2025-11-07 07:57:46,092 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/scribble-arrow-to-right.tsx (ext=.tsx, size=1549)
+2025-11-07 07:57:46,179 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/download-file.tsx
+2025-11-07 07:57:46,274 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/eslint.config.mjs (ext=.mjs, size=393)
+2025-11-07 07:57:46,357 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/user.ts
+2025-11-07 07:57:46,519 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/checkbox.tsx (ext=.tsx, size=1242)
+2025-11-07 07:57:46,611 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/tanstack-provider.tsx (ext=.tsx, size=1012)
+2025-11-07 07:57:46,691 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/listInvoices.ts
+2025-11-07 07:57:46,778 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/id-badge.tsx
+2025-11-07 07:57:46,852 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/index.ts
+2025-11-07 07:57:46,922 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/download-file.tsx (ext=.tsx, size=358)
+2025-11-07 07:57:46,995 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/postcss.config.mjs
+2025-11-07 07:57:47,097 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/invoice.ts
+2025-11-07 07:57:47,178 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-color-picker.tsx
+2025-11-07 07:57:47,250 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/posthog-provider.tsx
+2025-11-07 07:57:47,332 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/listInvoices.ts (ext=.ts, size=1712)
+2025-11-07 07:57:47,414 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/id-badge.tsx (ext=.tsx, size=1677)
+2025-11-07 07:57:47,494 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/index.ts (ext=.ts, size=78)
+2025-11-07 07:57:47,580 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-image-mime.ts
+2025-11-07 07:57:47,675 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/postcss.config.mjs (ext=.mjs, size=81)
+2025-11-07 07:57:47,760 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/index.ts
+2025-11-07 07:57:47,845 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-textarea.tsx
+2025-11-07 07:57:47,918 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/posthog-provider.tsx (ext=.tsx, size=1445)
+2025-11-07 07:57:48,005 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/updateInvoiceStatus.ts
+2025-11-07 07:57:48,126 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/inbox-arrow-down.tsx
+2025-11-07 07:57:48,209 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/parseCatchError.ts
+2025-11-07 07:57:48,293 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-image-mime.ts (ext=.ts, size=948)
+2025-11-07 07:57:48,377 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/public/manifest.json
+2025-11-07 07:57:48,465 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/index.ts (ext=.ts, size=51)
+2025-11-07 07:57:48,605 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-button.tsx
+2025-11-07 07:57:48,688 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/index.ts
+2025-11-07 07:57:48,776 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/deleteInvoice.ts
+2025-11-07 07:57:48,860 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/inbox-arrow-down.tsx (ext=.tsx, size=1696)
+2025-11-07 07:57:48,940 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/parseCatchError.ts (ext=.ts, size=191)
+2025-11-07 07:57:49,020 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/save-invoice.ts
+2025-11-07 07:57:49,133 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/public/manifest.json (ext=.json, size=633)
+2025-11-07 07:57:49,215 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/index.ts
+2025-11-07 07:57:49,294 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-button.tsx (ext=.tsx, size=1294)
+2025-11-07 07:57:49,381 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/index.ts (ext=.ts, size=404)
+2025-11-07 07:57:49,497 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/deleteInvoice.ts (ext=.ts, size=1530)
+2025-11-07 07:57:49,575 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/label-info.tsx
+2025-11-07 07:57:49,658 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/tryCatch.ts
+2025-11-07 07:57:49,737 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/save-invoice.ts (ext=.ts, size=1864)
+2025-11-07 07:57:49,841 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/turbo.json
+2025-11-07 07:57:49,926 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/index.ts (ext=.ts, size=282)
+2025-11-07 07:57:50,008 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-row.tsx
+2025-11-07 07:57:50,094 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/openpanel-provider.tsx
+2025-11-07 07:57:50,166 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/index.ts
+2025-11-07 07:57:50,246 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/label-info.tsx (ext=.tsx, size=1566)
+2025-11-07 07:57:50,329 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/tryCatch.ts (ext=.ts, size=487)
+2025-11-07 07:57:50,423 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-png-from-base64.ts
+2025-11-07 07:57:50,549 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/turbo.json (ext=.json, size=1379)
+2025-11-07 07:57:50,637 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/custom/decimal.ts
+2025-11-07 07:57:50,763 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-row.tsx (ext=.tsx, size=269)
+2025-11-07 07:57:50,843 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/openpanel-provider.tsx (ext=.tsx, size=427)
+2025-11-07 07:57:50,956 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/index.ts (ext=.ts, size=544)
+2025-11-07 07:57:51,044 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/triangle-warning.tsx
+2025-11-07 07:57:51,124 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/utils.ts
+2025-11-07 07:57:51,237 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-png-from-base64.ts (ext=.ts, size=997)
+2025-11-07 07:57:51,318 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/package.json
+2025-11-07 07:57:51,403 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/custom/decimal.ts (ext=.ts, size=532)
+2025-11-07 07:57:51,471 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-image-input.tsx
+2025-11-07 07:57:51,549 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/instances/invoice/invoice-download-manager.tsx
+2025-11-07 07:57:51,665 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/insertInvoice.ts
+2025-11-07 07:57:51,745 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/triangle-warning.tsx (ext=.tsx, size=1410)
+2025-11-07 07:57:51,816 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/utils.ts (ext=.ts, size=169)
+2025-11-07 07:57:51,897 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/edit-invoice.ts
+2025-11-07 07:57:51,974 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/package.json (ext=.json, size=1669)
+2025-11-07 07:57:52,060 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/package.json
+2025-11-07 07:57:52,136 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-input.tsx
+2025-11-07 07:57:52,250 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/atoms/invoice-atom.ts
+2025-11-07 07:57:52,317 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/insertInvoice.ts (ext=.ts, size=1999)
+2025-11-07 07:57:52,418 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gauge.tsx
+2025-11-07 07:57:52,492 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImages.ts
+2025-11-07 07:57:52,573 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/edit-invoice.ts (ext=.ts, size=1612)
+2025-11-07 07:57:52,656 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/llm/effect-ts-llm.txt
+2025-11-07 07:57:52,739 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/package.json (ext=.json, size=731)
+2025-11-07 07:57:52,814 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-select.tsx
+2025-11-07 07:57:52,902 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/atoms/invoice-atom.ts (ext=.ts, size=461)
+2025-11-07 07:57:52,981 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/server.tsx
+2025-11-07 07:57:53,058 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/versions.tsx
+2025-11-07 07:57:53,134 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImages.ts (ext=.ts, size=552)
+2025-11-07 07:57:53,204 - Knowledge - INFO - Worker kw6 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-url.ts
+2025-11-07 07:57:53,285 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/llm/effect-ts-llm.txt (ext=.txt, size=1570231)
+2025-11-07 07:57:53,365 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/drizzle.config.ts
+2025-11-07 07:57:53,448 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form.tsx
+2025-11-07 07:57:53,542 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/indexdb/index.ts
+2025-11-07 07:57:53,664 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/server.tsx (ext=.tsx, size=685)
+2025-11-07 07:57:53,738 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/versions.tsx (ext=.tsx, size=1366)
+2025-11-07 07:57:53,822 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/uploadImage.ts
+2025-11-07 07:57:53,901 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-url.ts (ext=.ts, size=317)
+2025-11-07 07:57:53,998 - Knowledge - INFO - Worker kw7 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/drizzle.config.ts
+2025-11-07 07:57:54,103 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/drizzle.config.ts (ext=.ts, size=368)
+2025-11-07 07:57:54,183 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-signature-input.tsx
+2025-11-07 07:57:54,292 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/indexdb/index.ts (ext=.ts, size=1055)
+2025-11-07 07:57:54,409 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/client.tsx
+2025-11-07 07:57:54,482 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/moon.tsx
+2025-11-07 07:57:54,567 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/uploadImage.ts (ext=.ts, size=1012)
+2025-11-07 07:57:54,732 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/drizzle.config.ts (ext=.ts, size=374)
+2025-11-07 07:57:54,804 - Knowledge - INFO - Worker kw8 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0001_bent_runaways.sql
+2025-11-07 07:57:54,880 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-date-picker.tsx
+2025-11-07 07:57:54,973 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/sitemap.ts
+2025-11-07 07:57:55,091 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/procedures/authorizedProcedure.ts
+2025-11-07 07:57:55,178 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/moon.tsx (ext=.tsx, size=1027)
+2025-11-07 07:57:55,260 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImagesCount.ts
+2025-11-07 07:57:55,497 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/breadcrumb.tsx
+2025-11-07 07:57:55,573 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/sitemap.ts (ext=.ts, size=606)
+2025-11-07 07:57:55,650 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/procedures/authorizedProcedure.ts (ext=.ts, size=268)
+2025-11-07 07:57:55,727 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box.tsx
+2025-11-07 07:57:55,821 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImagesCount.ts (ext=.ts, size=417)
+2025-11-07 07:57:55,934 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table.tsx
+2025-11-07 07:57:56,028 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/page.tsx
+2025-11-07 07:57:56,105 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/awsS3Middleware.ts
+2025-11-07 07:57:56,184 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box.tsx (ext=.tsx, size=1439)
+2025-11-07 07:57:56,255 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/deleteImage.ts
+2025-11-07 07:57:56,327 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/generate-breadcrumb.tsx
+2025-11-07 07:57:56,449 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/page.tsx (ext=.tsx, size=537)
+2025-11-07 07:57:56,521 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/awsS3Middleware.ts (ext=.ts, size=573)
+2025-11-07 07:57:56,637 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sort-num-desc.tsx
+2025-11-07 07:57:56,715 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/deleteImage.ts (ext=.ts, size=425)
+2025-11-07 07:57:56,831 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/generate-breadcrumb.tsx (ext=.tsx, size=959)
+2025-11-07 07:57:56,953 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/auth/[...all]/route.ts
+2025-11-07 07:57:57,042 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/betterAuthMiddleware.ts
+2025-11-07 07:57:57,135 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/cloudflare.tsx
+2025-11-07 07:57:57,224 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/getInvoice.ts
+2025-11-07 07:57:57,326 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/avatar.tsx
+2025-11-07 07:57:57,429 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/auth/[...all]/route.ts (ext=.ts, size=190)
+2025-11-07 07:57:57,556 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/betterAuthMiddleware.ts (ext=.ts, size=613)
+2025-11-07 07:57:57,631 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/cloudflare.tsx (ext=.tsx, size=1796)
+2025-11-07 07:57:57,703 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/getInvoice.ts (ext=.ts, size=1024)
+2025-11-07 07:57:57,782 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/avatar.tsx (ext=.tsx, size=1037)
+2025-11-07 07:57:57,862 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/og/route.tsx
+2025-11-07 07:57:57,955 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/init.ts
+2025-11-07 07:57:58,037 - Knowledge - INFO - Worker kw4 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-open-arrow-right.tsx
+2025-11-07 07:57:58,127 - Knowledge - INFO - Worker kw5 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/listInvoices.ts
+2025-11-07 07:57:58,208 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dropdown-menu.tsx
+2025-11-07 07:57:58,330 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/trpc/[trpc]/route.ts
+2025-11-07 07:57:58,409 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/init.ts (ext=.ts, size=816)
+2025-11-07 07:57:58,486 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-open-arrow-right.tsx (ext=.tsx, size=1133)
+2025-11-07 07:57:58,569 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/listInvoices.ts (ext=.ts, size=936)
+2025-11-07 07:57:58,680 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/command.tsx
+2025-11-07 07:57:58,780 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/trpc/[trpc]/route.ts (ext=.ts, size=392)
+2025-11-07 07:57:58,859 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/transformer/index.ts
+2025-11-07 07:57:59,131 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-data-table-filters.tsx
+2025-11-07 07:57:59,216 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/fonts.css
+2025-11-07 07:57:59,326 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/transformer/index.ts (ext=.ts, size=505)
+2025-11-07 07:57:59,404 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-debounce-callback.tsx
+2025-11-07 07:57:59,472 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/fonts.css (ext=.css, size=677)
+2025-11-07 07:57:59,548 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/query-client.ts
+2025-11-07 07:57:59,683 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-debounce-callback.tsx (ext=.tsx, size=1616)
+2025-11-07 07:57:59,770 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/page.tsx
+2025-11-07 07:57:59,866 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/query-client.ts (ext=.ts, size=586)
+2025-11-07 07:57:59,940 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-unmount.tsx
+2025-11-07 07:58:00,097 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/page.tsx (ext=.tsx, size=140)
+2025-11-07 07:58:00,181 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation-client.ts
+2025-11-07 07:58:00,258 - Knowledge - INFO - [LLM_CALL] Completed: insertInvoice.ts:chunk1, Duration: 5601ms, PromptTokens: 5172, CompletionTokens: 471, Cost: $0.00000
+2025-11-07 07:58:00,271 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-unmount.tsx (ext=.tsx, size=229)
+2025-11-07 07:58:00,353 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/invoices.tsx
+2025-11-07 07:58:00,428 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation-client.ts (ext=.ts, size=1102)
+2025-11-07 07:58:00,517 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/insertInvoice.ts
+2025-11-07 07:58:00,648 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-subject.tsx
+2025-11-07 07:58:00,723 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/invoices.tsx (ext=.tsx, size=1910)
+2025-11-07 07:58:00,808 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/web-analytics.ts
+2025-11-07 07:58:01,094 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-subject.tsx (ext=.tsx, size=585)
+2025-11-07 07:58:01,143 - Knowledge - INFO - [LLM_CALL] Completed: invoice.ts:chunk1, Duration: 3576ms, PromptTokens: 7088, CompletionTokens: 843, Cost: $0.00000
+2025-11-07 07:58:01,180 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-templates.tsx
+2025-11-07 07:58:01,330 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/web-analytics.ts (ext=.ts, size=351)
+2025-11-07 07:58:01,419 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-operator.tsx
+2025-11-07 07:58:01,517 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/invoice.ts
+2025-11-07 07:58:01,745 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-templates.tsx (ext=.tsx, size=1690)
+2025-11-07 07:58:01,852 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/neverthrow/index.ts
+2025-11-07 07:58:02,010 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-actions.tsx
+2025-11-07 07:58:02,254 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-image-selector-sheet.tsx
+2025-11-07 07:58:02,292 - Knowledge - INFO - [LLM_CALL] Completed: next.config.ts:chunk1, Duration: 4539ms, PromptTokens: 9104, CompletionTokens: 1056, Cost: $0.00000
+2025-11-07 07:58:02,358 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/neverthrow/index.ts (ext=.ts, size=121)
+2025-11-07 07:58:02,436 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-actions.tsx (ext=.tsx, size=787)
+2025-11-07 07:58:02,508 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-string-value-section.tsx
+2025-11-07 07:58:02,621 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/next.config.ts
+2025-11-07 07:58:02,738 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/invoice.ts
+2025-11-07 07:58:02,799 - Knowledge - INFO - Processing batch of 20 files
+2025-11-07 07:58:02,828 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-selector.tsx
+2025-11-07 07:58:02,910 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-number-value-section.tsx
+2025-11-07 07:58:03,149 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/invoice.ts (ext=.ts, size=532)
+2025-11-07 07:58:03,235 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/deleteInvoice.ts
+2025-11-07 07:58:03,346 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-value.tsx
+2025-11-07 07:58:03,481 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-items-section.tsx
+2025-11-07 07:58:03,551 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/index.ts
+2025-11-07 07:58:03,718 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/insertInvoice.ts
+2025-11-07 07:58:03,792 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/active-filters.tsx
+2025-11-07 07:58:03,940 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/page.tsx
+2025-11-07 07:58:04,059 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/index.ts (ext=.ts, size=352)
+2025-11-07 07:58:04,129 - Knowledge - INFO - [LLM_CALL] Completed: trpc.ts:chunk1, Duration: 8784ms, PromptTokens: 11092, CompletionTokens: 1492, Cost: $0.00000
+2025-11-07 07:58:04,140 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/getAllImages.ts
+2025-11-07 07:58:04,226 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/data-table-filter.tsx
+2025-11-07 07:58:04,324 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/page.tsx (ext=.tsx, size=137)
+2025-11-07 07:58:04,399 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/common/invoice.ts
+2025-11-07 07:58:04,626 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/effect/error/trpc.ts
+2025-11-07 07:58:04,963 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/data-table-filter.tsx (ext=.tsx, size=1822)
+2025-11-07 07:58:05,044 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice.tsx
+2025-11-07 07:58:05,048 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/invoice.ts
+2025-11-07 07:58:05,161 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/common/invoice.ts (ext=.ts, size=421)
+2025-11-07 07:58:05,170 - Knowledge - INFO - [LLM_CALL] Completed: 0001_bent_runaways.sql:chunk1, Duration: 5260ms, PromptTokens: 15108, CompletionTokens: 1696, Cost: $0.00000
+2025-11-07 07:58:05,364 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/ui/debounced-input.tsx
+2025-11-07 07:58:05,448 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/import-invoice.tsx
+2025-11-07 07:58:05,539 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/updateInvoiceStatus.ts
+2025-11-07 07:58:05,654 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/svg.ts
+2025-11-07 07:58:05,738 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0001_bent_runaways.sql
+2025-11-07 07:58:05,824 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/ui/debounced-input.tsx (ext=.tsx, size=1264)
+2025-11-07 07:58:05,854 - Knowledge - INFO - Processing batch of 20 files
+2025-11-07 07:58:05,913 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-errors-modal.tsx
+2025-11-07 07:58:06,031 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteInvoice.ts
+2025-11-07 07:58:06,117 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/svg.ts (ext=.ts, size=168)
+2025-11-07 07:58:06,365 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/operators.ts
+2025-11-07 07:58:06,579 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-file-size-from-base64.ts
+2025-11-07 07:58:06,724 - Knowledge - INFO - [LLM_CALL] Completed: user.ts:chunk1, Duration: 11298ms, PromptTokens: 16926, CompletionTokens: 1907, Cost: $0.00000
+2025-11-07 07:58:06,775 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-tab-switch.tsx
+2025-11-07 07:58:06,858 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/uploadImage.ts
+2025-11-07 07:58:06,945 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/index.ts
+2025-11-07 07:58:07,024 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/types.ts
+2025-11-07 07:58:07,117 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-buffer-from-base64.ts
+2025-11-07 07:58:07,188 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/user.ts
+2025-11-07 07:58:07,336 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-tab-switch.tsx (ext=.tsx, size=1576)
+2025-11-07 07:58:07,446 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/indexdb-queries/deleteImage.ts
+2025-11-07 07:58:07,526 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/index.ts (ext=.ts, size=83)
+2025-11-07 07:58:07,600 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/filters.ts
+2025-11-07 07:58:07,692 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/effect/error/trpc.ts
+2025-11-07 07:58:07,867 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-options.tsx
+2025-11-07 07:58:07,903 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/invoice.ts
+2025-11-07 07:58:07,953 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/posthog.ts
+2025-11-07 07:58:08,028 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/auth.ts
+2025-11-07 07:58:08,143 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/index.tsx
+2025-11-07 07:58:08,231 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/client-auth.ts
+2025-11-07 07:58:08,307 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-preview.tsx
+2025-11-07 07:58:08,463 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/manage-assets/getImagesWithKey.ts
+2025-11-07 07:58:08,529 - Knowledge - INFO - Processing batch of 20 files
+2025-11-07 07:58:08,549 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/auth.ts (ext=.ts, size=248)
+2025-11-07 07:58:08,645 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/index.tsx (ext=.tsx, size=136)
+2025-11-07 07:58:08,725 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/auth.ts
+2025-11-07 07:58:08,802 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-form.tsx
+2025-11-07 07:58:08,892 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-to-image.ts
+2025-11-07 07:58:08,983 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/README.md
+2025-11-07 07:58:09,056 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/sidebar.ts
+2025-11-07 07:58:09,135 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/locales/en.json
+2025-11-07 07:58:09,206 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/next.config.ts
+2025-11-07 07:58:09,279 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/page.tsx
+2025-11-07 07:58:09,353 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/generate-invoice-name.ts
+2025-11-07 07:58:09,453 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/src/index.ts
+2025-11-07 07:58:09,529 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/sidebar.ts (ext=.ts, size=307)
+2025-11-07 07:58:09,615 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/locales/en.json (ext=.json, size=1562)
+2025-11-07 07:58:09,693 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/package.json
+2025-11-07 07:58:09,779 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/page.tsx (ext=.tsx, size=116)
+2025-11-07 07:58:09,891 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-from-base64.ts
+2025-11-07 07:58:09,978 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/utilities/package.json
+2025-11-07 07:58:10,050 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/currency.ts
+2025-11-07 07:58:10,123 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/helpers.ts
+2025-11-07 07:58:10,199 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/content-collections.ts
+2025-11-07 07:58:10,287 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/page.tsx
+2025-11-07 07:58:10,384 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-pdf-blob.tsx
+2025-11-07 07:58:10,505 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/react-internal.js
+2025-11-07 07:58:10,585 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/currency.ts (ext=.ts, size=1053)
+2025-11-07 07:58:10,659 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/array.ts
+2025-11-07 07:58:10,784 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/components.json
+2025-11-07 07:58:10,860 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/page.tsx (ext=.tsx, size=116)
+2025-11-07 07:58:10,943 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/download-file.tsx
+2025-11-07 07:58:11,024 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/package.json
+2025-11-07 07:58:11,104 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/toast.tsx
+2025-11-07 07:58:11,224 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/debounce.ts
+2025-11-07 07:58:11,312 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.edge.config.ts
+2025-11-07 07:58:11,382 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/editInvoice.tsx
+2025-11-07 07:58:11,503 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/get-image-mime.ts
+2025-11-07 07:58:11,579 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/next.js
+2025-11-07 07:58:11,663 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/toast.tsx (ext=.tsx, size=1334)
+2025-11-07 07:58:11,742 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/i18n.ts
+2025-11-07 07:58:11,837 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/tsconfig.json
+2025-11-07 07:58:11,913 - Knowledge - INFO - Worker kw2 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/page.tsx
+2025-11-07 07:58:12,011 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/save-invoice.ts
+2025-11-07 07:58:12,103 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/base.js
+2025-11-07 07:58:12,218 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/errors.ts
+2025-11-07 07:58:12,297 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/i18n.ts (ext=.ts, size=276)
+2025-11-07 07:58:12,391 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/README.md
+2025-11-07 07:58:12,464 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/page.tsx (ext=.tsx, size=715)
+2025-11-07 07:58:12,546 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-png-from-base64.ts
+2025-11-07 07:58:12,628 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/eslint-config/README.md
+2025-11-07 07:58:12,719 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/errors.ts (ext=.ts, size=1687)
+2025-11-07 07:58:12,992 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/memo.ts
+2025-11-07 07:58:13,089 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/sentry.server.config.ts
+2025-11-07 07:58:13,257 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/edit-invoice.ts
+2025-11-07 07:58:13,366 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/package.json
+2025-11-07 07:58:13,456 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/success.ts
+2025-11-07 07:58:13,535 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/memo.ts (ext=.ts, size=1001)
+2025-11-07 07:58:13,617 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/eslint.config.mjs
+2025-11-07 07:58:13,687 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/invoice/create-blob-url.ts
+2025-11-07 07:58:13,773 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/nextjs.json
+2025-11-07 07:58:13,890 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/success.ts (ext=.ts, size=850)
+2025-11-07 07:58:13,968 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/filter-fns.ts
+2025-11-07 07:58:14,037 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/postcss.config.mjs
+2025-11-07 07:58:14,255 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/react-library.json
+2025-11-07 07:58:14,334 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/index.ts
+2025-11-07 07:58:14,416 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/index.tsx
+2025-11-07 07:58:14,534 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/public/manifest.json
+2025-11-07 07:58:14,701 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/typescript-config/base.json
+2025-11-07 07:58:14,724 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/index.ts (ext=.ts, size=53)
+2025-11-07 07:58:14,848 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/filter-fns.ts
+2025-11-07 07:58:14,938 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/turbo.json
+2025-11-07 07:58:15,032 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/user.ts
+2025-11-07 07:58:15,072 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/links.ts
+2025-11-07 07:58:15,153 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/filter-fns.ts (ext=.ts, size=795)
+2025-11-07 07:58:15,241 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/package.json
+2025-11-07 07:58:15,317 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/invoice.ts
+2025-11-07 07:58:15,424 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/links.ts (ext=.ts, size=309)
+2025-11-07 07:58:15,504 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/skeleton.tsx
+2025-11-07 07:58:15,594 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/llm/effect-ts-llm.txt
+2025-11-07 07:58:15,674 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/schema/index.ts
+2025-11-07 07:58:15,740 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-fonts.ts
+2025-11-07 07:58:15,860 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/skeleton.tsx (ext=.tsx, size=247)
+2025-11-07 07:58:15,954 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/drizzle.config.ts
+2025-11-07 07:58:15,998 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 290, Duration: 0ms
+2025-11-07 07:58:16,062 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/index.ts
+2025-11-07 07:58:16,140 - Knowledge - INFO - Worker kw3 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/indexed-db.ts
+2025-11-07 07:58:16,250 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/scroll-area.tsx
+2025-11-07 07:58:16,406 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 409ms
+2025-11-07 07:58:16,533 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/src/custom/decimal.ts
+2025-11-07 07:58:16,620 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/indexed-db.ts (ext=.ts, size=210)
+2025-11-07 07:58:16,701 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/scroll-area.tsx (ext=.tsx, size=1604)
+2025-11-07 07:58:16,784 - Knowledge - INFO - Progress: 20.2% | Files: 66/326 | Rate: 0.92 files/sec | Queue: 0
+2025-11-07 07:58:16,944 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/package.json
+2025-11-07 07:58:17,094 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sheet.tsx
+2025-11-07 07:58:17,308 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/drizzle.config.ts
+2025-11-07 07:58:17,357 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/icon-placeholder.tsx
+2025-11-07 07:58:17,501 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/packages/db/migrations/0001_bent_runaways.sql
+2025-11-07 07:58:17,588 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/icon-placeholder.tsx (ext=.tsx, size=963)
+2025-11-07 07:58:17,785 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/posthog-analytics.tsx
+2025-11-07 07:58:17,944 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/posthog-analytics.tsx (ext=.tsx, size=939)
+2025-11-07 07:58:18,138 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/separator.tsx
+2025-11-07 07:58:18,294 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/separator.tsx (ext=.tsx, size=711)
+2025-11-07 07:58:18,454 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/resizable.tsx
+2025-11-07 07:58:18,657 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/fancy-badges.tsx
+2025-11-07 07:58:18,816 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/fancy-badges.tsx (ext=.tsx, size=868)
+2025-11-07 07:58:18,990 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/button.tsx
+2025-11-07 07:58:19,174 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/modern-card.tsx
+2025-11-07 07:58:19,337 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/modern-card.tsx (ext=.tsx, size=855)
+2025-11-07 07:58:19,499 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/table.tsx
+2025-11-07 07:58:19,732 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/alert.tsx
+2025-11-07 07:58:19,926 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/alert.tsx (ext=.tsx, size=1864)
+2025-11-07 07:58:20,083 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/open-source-badge.tsx
+2025-11-07 07:58:20,258 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/open-source-badge.tsx (ext=.tsx, size=900)
+2025-11-07 07:58:20,497 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dialog.tsx
+2025-11-07 07:58:20,657 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/label.tsx
+2025-11-07 07:58:20,830 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/label.tsx (ext=.tsx, size=614)
+2025-11-07 07:58:21,022 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/select.tsx
+2025-11-07 07:58:21,177 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/input.tsx
+2025-11-07 07:58:21,350 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/input.tsx (ext=.tsx, size=962)
+2025-11-07 07:58:21,526 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/signature-input-modal.tsx
+2025-11-07 07:58:21,678 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/sheet-image-selector-trigger.tsx
+2025-11-07 07:58:21,837 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/image-input.tsx
+2025-11-07 07:58:22,033 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/textarea.tsx
+2025-11-07 07:58:22,205 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/textarea.tsx (ext=.tsx, size=754)
+2025-11-07 07:58:22,399 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tabs.tsx
+2025-11-07 07:58:22,558 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tabs.tsx (ext=.tsx, size=1902)
+2025-11-07 07:58:22,730 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/collapsible.tsx
+2025-11-07 07:58:22,907 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/collapsible.tsx (ext=.tsx, size=748)
+2025-11-07 07:58:23,075 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/card.tsx
+2025-11-07 07:58:23,227 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/card.tsx (ext=.tsx, size=1819)
+2025-11-07 07:58:23,421 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sidebar.tsx
+2025-11-07 07:58:23,591 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/calendar.tsx
+2025-11-07 07:58:23,743 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/switch.tsx
+2025-11-07 07:58:23,929 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/accordion.tsx
+2025-11-07 07:58:24,126 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-card.tsx
+2025-11-07 07:58:24,279 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-card.tsx (ext=.tsx, size=1452)
+2025-11-07 07:58:24,452 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-hero.tsx
+2025-11-07 07:58:24,604 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-hero.tsx (ext=.tsx, size=1763)
+2025-11-07 07:58:24,831 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/image.tsx
+2025-11-07 07:58:24,990 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/image.tsx (ext=.tsx, size=1704)
+2025-11-07 07:58:25,184 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/headings.tsx
+2025-11-07 07:58:25,390 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/headings.tsx (ext=.tsx, size=1362)
+2025-11-07 07:58:25,571 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/code.tsx
+2025-11-07 07:58:25,728 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/code.tsx (ext=.tsx, size=545)
+2025-11-07 07:58:25,925 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/points.tsx
+2025-11-07 07:58:26,102 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/points.tsx (ext=.tsx, size=560)
+2025-11-07 07:58:26,261 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/index.tsx
+2025-11-07 07:58:26,448 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/index.tsx (ext=.tsx, size=450)
+2025-11-07 07:58:26,609 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/link.tsx
+2025-11-07 07:58:26,781 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/link.tsx (ext=.tsx, size=556)
+2025-11-07 07:58:26,933 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-content.tsx
+2025-11-07 07:58:27,153 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-footer.tsx
+2025-11-07 07:58:27,317 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-footer.tsx (ext=.tsx, size=1058)
+2025-11-07 07:58:27,550 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-header.tsx
+2025-11-07 07:58:27,712 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-header.tsx (ext=.tsx, size=882)
+2025-11-07 07:58:27,866 - Knowledge - INFO - Worker kw1 processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar.tsx
+2025-11-07 07:58:28,026 - Knowledge - INFO - Fast-tracked /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar.tsx (ext=.tsx, size=1499)
+2025-11-07 07:58:29,025 - Knowledge - INFO - [LLM_CALL] Completed: gauge.tsx:chunk1, Duration: 11510ms, PromptTokens: 24322, CompletionTokens: 2520, Cost: $0.00000
+2025-11-07 07:58:29,185 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gauge.tsx
+2025-11-07 07:58:29,639 - Knowledge - INFO - [LLM_CALL] Completed: database.tsx:chunk1, Duration: 18521ms, PromptTokens: 27316, CompletionTokens: 2716, Cost: $0.00000
+2025-11-07 07:58:29,813 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/database.tsx
+2025-11-07 07:58:30,326 - Knowledge - INFO - [LLM_CALL] Completed: file-check.tsx:chunk1, Duration: 25278ms, PromptTokens: 30276, CompletionTokens: 2927, Cost: $0.00000
+2025-11-07 07:58:30,511 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-check.tsx
+2025-11-07 07:58:30,979 - Knowledge - INFO - [LLM_CALL] Completed: file-alert.tsx:chunk1, Duration: 17980ms, PromptTokens: 33464, CompletionTokens: 3115, Cost: $0.00000
+2025-11-07 07:58:31,141 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-alert.tsx
+2025-11-07 07:58:31,613 - Knowledge - INFO - [LLM_CALL] Completed: sort-num-desc.tsx:chunk1, Duration: 10957ms, PromptTokens: 36658, CompletionTokens: 3307, Cost: $0.00000
+2025-11-07 07:58:31,762 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sort-num-desc.tsx
+2025-11-07 07:58:32,426 - Knowledge - INFO - [LLM_CALL] Completed: meta-data.ts:chunk1, Duration: 33465ms, PromptTokens: 39328, CompletionTokens: 3525, Cost: $0.00000
+2025-11-07 07:58:32,604 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/meta-data.ts
+2025-11-07 07:58:33,063 - Knowledge - INFO - [LLM_CALL] Completed: gear.tsx:chunk1, Duration: 25028ms, PromptTokens: 42442, CompletionTokens: 3700, Cost: $0.00000
+2025-11-07 07:58:33,250 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gear.tsx
+2025-11-07 07:58:33,669 - Knowledge - INFO - [LLM_CALL] Completed: hourglass-start.tsx:chunk1, Duration: 31046ms, PromptTokens: 45288, CompletionTokens: 3883, Cost: $0.00000
+2025-11-07 07:58:33,856 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hourglass-start.tsx
+2025-11-07 07:58:34,402 - Knowledge - INFO - [LLM_CALL] Completed: file-tree.tsx:chunk1, Duration: 19034ms, PromptTokens: 48148, CompletionTokens: 4076, Cost: $0.00000
+2025-11-07 07:58:34,572 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-tree.tsx
+2025-11-07 07:58:35,087 - Knowledge - INFO - [LLM_CALL] Completed: file-download.tsx:chunk1, Duration: 25542ms, PromptTokens: 51018, CompletionTokens: 4262, Cost: $0.00000
+2025-11-07 07:58:35,347 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-download.tsx
+2025-11-07 07:58:35,646 - Knowledge - INFO - [LLM_CALL] Completed: eye-scanner.tsx:chunk1, Duration: 15516ms, PromptTokens: 54124, CompletionTokens: 4448, Cost: $0.00000
+2025-11-07 07:58:36,142 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/eye-scanner.tsx
+2025-11-07 07:58:36,142 - Knowledge - INFO - [LLM_CALL] Completed: square-wand-sparkle.tsx:chunk1, Duration: 30052ms, PromptTokens: 57412, CompletionTokens: 4645, Cost: $0.00000
+2025-11-07 07:58:36,387 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/square-wand-sparkle.tsx
+2025-11-07 07:58:37,095 - Knowledge - INFO - Processing batch of 30 files
+2025-11-07 07:58:37,345 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/index.ts
+2025-11-07 07:58:37,621 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/meta-data.ts
+2025-11-07 07:58:37,787 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/sidebar.tsx
+2025-11-07 07:58:38,185 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-helpers.tsx
+2025-11-07 07:58:38,386 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hourglass-start.tsx
+2025-11-07 07:58:38,746 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/github.tsx
+2025-11-07 07:58:38,896 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-check.tsx
+2025-11-07 07:58:39,077 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/server.tsx
+2025-11-07 07:58:39,554 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/recipt.tsx
+2025-11-07 07:58:39,716 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/square-wand-sparkle.tsx
+2025-11-07 07:58:40,100 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-x-mark.tsx
+2025-11-07 07:58:40,263 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gear.tsx
+2025-11-07 07:58:40,928 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-download.tsx
+2025-11-07 07:58:41,542 - Knowledge - INFO - [LLM_CALL] Completed: signature.tsx:chunk1, Duration: 14663ms, PromptTokens: 60756, CompletionTokens: 4841, Cost: $0.00000
+2025-11-07 07:58:41,550 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calendar-check.tsx
+2025-11-07 07:58:41,771 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/signature.tsx
+2025-11-07 07:58:41,878 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/database.tsx
+2025-11-07 07:58:42,057 - Knowledge - INFO - [LLM_CALL] Completed: file-feather.tsx:chunk1, Duration: 36318ms, PromptTokens: 63670, CompletionTokens: 5046, Cost: $0.00000
+2025-11-07 07:58:42,126 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-alert.tsx
+2025-11-07 07:58:42,227 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-feather.tsx
+2025-11-07 07:58:42,322 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/hardrive.tsx
+2025-11-07 07:58:42,514 - Knowledge - INFO - [LLM_CALL] Completed: file-refresh.tsx:chunk1, Duration: 39890ms, PromptTokens: 66808, CompletionTokens: 5250, Cost: $0.00000
+2025-11-07 07:58:42,596 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-check.tsx
+2025-11-07 07:58:42,684 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-refresh.tsx
+2025-11-07 07:58:42,787 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-tree.tsx
+2025-11-07 07:58:42,908 - Knowledge - INFO - [LLM_CALL] Completed: blog.tsx:chunk1, Duration: 43862ms, PromptTokens: 69650, CompletionTokens: 5444, Cost: $0.00000
+2025-11-07 07:58:42,998 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/id-badge.tsx
+2025-11-07 07:58:43,078 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/blog.tsx
+2025-11-07 07:58:43,169 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/inbox-arrow-down.tsx
+2025-11-07 07:58:43,333 - Knowledge - INFO - [LLM_CALL] Completed: file-ban.tsx:chunk1, Duration: 26309ms, PromptTokens: 72496, CompletionTokens: 5637, Cost: $0.00000
+2025-11-07 07:58:43,417 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/label-info.tsx
+2025-11-07 07:58:43,495 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-ban.tsx
+2025-11-07 07:58:43,613 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/triangle-warning.tsx
+2025-11-07 07:58:43,773 - Knowledge - INFO - [LLM_CALL] Completed: image-sparkle.tsx:chunk1, Duration: 20342ms, PromptTokens: 76042, CompletionTokens: 5843, Cost: $0.00000
+2025-11-07 07:58:43,836 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/gauge.tsx
+2025-11-07 07:58:43,947 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/image-sparkle.tsx
+2025-11-07 07:58:44,066 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/versions.tsx
+2025-11-07 07:58:44,187 - Knowledge - INFO - [LLM_CALL] Completed: file-pen.tsx:chunk1, Duration: 34803ms, PromptTokens: 78908, CompletionTokens: 6036, Cost: $0.00000
+2025-11-07 07:58:44,271 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/moon.tsx
+2025-11-07 07:58:44,338 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-pen.tsx
+2025-11-07 07:58:44,432 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box.tsx
+2025-11-07 07:58:44,756 - Knowledge - INFO - [LLM_CALL] Completed: sun.tsx:chunk1, Duration: 32037ms, PromptTokens: 82618, CompletionTokens: 6234, Cost: $0.00000
+2025-11-07 07:58:44,767 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sort-num-desc.tsx
+2025-11-07 07:58:44,916 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sun.tsx
+2025-11-07 07:58:44,998 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/cloudflare.tsx
+2025-11-07 07:58:45,329 - Knowledge - INFO - [LLM_CALL] Completed: fingerprint.tsx:chunk1, Duration: 37585ms, PromptTokens: 86326, CompletionTokens: 6418, Cost: $0.00000
+2025-11-07 07:58:45,445 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/circle-open-arrow-right.tsx
+2025-11-07 07:58:45,521 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/fingerprint.tsx
+2025-11-07 07:58:45,987 - Knowledge - INFO - [LLM_CALL] Completed: sliders.tsx:chunk1, Duration: 31281ms, PromptTokens: 89954, CompletionTokens: 6617, Cost: $0.00000
+2025-11-07 07:58:46,160 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sliders.tsx
+2025-11-07 07:58:46,569 - Knowledge - INFO - [LLM_CALL] Completed: index.ts:chunk1, Duration: 35378ms, PromptTokens: 91878, CompletionTokens: 7207, Cost: $0.00000
+2025-11-07 07:58:46,760 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/index.ts
+2025-11-07 07:58:47,590 - Knowledge - INFO - Processing batch of 30 files
+2025-11-07 07:58:47,742 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/blog.tsx
+2025-11-07 07:58:47,983 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-refresh.tsx
+2025-11-07 07:58:48,234 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sidebar-menu.tsx
+2025-11-07 07:58:48,402 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-feather.tsx
+2025-11-07 07:58:48,564 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/fingerprint.tsx
+2025-11-07 07:58:48,678 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 293, Duration: 0ms
+2025-11-07 07:58:48,783 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/folder-feather.tsx
+2025-11-07 07:58:48,855 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 177ms
+2025-11-07 07:58:48,948 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-pen.tsx
+2025-11-07 07:58:49,073 - Knowledge - INFO - Progress: 38.7% | Files: 126/326 | Rate: 1.21 files/sec | Queue: 0
+2025-11-07 07:58:49,169 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/priority-medium.tsx
+2025-11-07 07:58:49,375 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/index.ts
+2025-11-07 07:58:49,542 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sun.tsx
+2025-11-07 07:58:49,704 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/sliders.tsx
+2025-11-07 07:58:49,896 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/calender-pen.tsx
+2025-11-07 07:58:50,100 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/file-ban.tsx
+2025-11-07 07:58:50,302 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/box-plus.tsx
+2025-11-07 07:58:50,496 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/eye-scanner.tsx
+2025-11-07 07:58:50,715 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/star.tsx
+2025-11-07 07:58:50,919 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/image-sparkle.tsx
+2025-11-07 07:58:51,137 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/trash.tsx
+2025-11-07 07:58:51,314 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/icons/signature.tsx
+2025-11-07 07:58:51,473 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/scribble-arrow-to-right.tsx
+2025-11-07 07:58:51,638 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/assets/svgs/index.ts
+2025-11-07 07:58:51,826 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/parseCatchError.ts
+2025-11-07 07:58:51,994 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/neverthrow/tryCatch.ts
+2025-11-07 07:58:52,228 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/utils.ts
+2025-11-07 07:58:52,392 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImages.ts
+2025-11-07 07:58:52,605 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/uploadImage.ts
+2025-11-07 07:58:52,764 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/getUserImagesCount.ts
+2025-11-07 07:58:52,968 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/cloudflare/r2/deleteImage.ts
+2025-11-07 07:58:53,171 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/getInvoice.ts
+2025-11-07 07:58:53,339 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/lib/db-queries/invoice/listInvoices.ts
+2025-11-07 07:58:54,718 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/assets.tsx after 90s
+2025-11-07 07:58:54,897 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-logo-asset.tsx after 90s
+2025-11-07 07:58:55,090 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-signature.asset.tsx after 90s
+2025-11-07 07:58:59,086 - Knowledge - INFO - [LLM_CALL] Completed: uploadImage.ts:chunk1, Duration: 28108ms, PromptTokens: 94470, CompletionTokens: 7602, Cost: $0.00000
+2025-11-07 07:58:59,261 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/uploadImage.ts
+2025-11-07 07:59:00,654 - Knowledge - INFO - [LLM_CALL] Completed: pdf-fonts.ts:chunk1, Duration: 8338ms, PromptTokens: 97520, CompletionTokens: 7763, Cost: $0.00000
+2025-11-07 07:59:00,843 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-fonts.ts
+2025-11-07 07:59:01,605 - Knowledge - INFO - [LLM_CALL] Completed: deleteImage.ts:chunk1, Duration: 25218ms, PromptTokens: 99272, CompletionTokens: 8089, Cost: $0.00000
+2025-11-07 07:59:01,780 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/deleteImage.ts
+2025-11-07 07:59:02,279 - Knowledge - INFO - [LLM_CALL] Completed: editInvoice.ts:chunk1, Duration: 20050ms, PromptTokens: 101158, CompletionTokens: 8468, Cost: $0.00000
+2025-11-07 07:59:02,438 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/editInvoice.ts
+2025-11-07 07:59:02,903 - Knowledge - INFO - [LLM_CALL] Completed: updateInvoiceStatus.ts:chunk1, Duration: 15594ms, PromptTokens: 103318, CompletionTokens: 8829, Cost: $0.00000
+2025-11-07 07:59:03,055 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/updateInvoiceStatus.ts
+2025-11-07 07:59:03,619 - Knowledge - INFO - [LLM_CALL] Completed: layout.tsx:chunk1, Duration: 36975ms, PromptTokens: 105594, CompletionTokens: 9207, Cost: $0.00000
+2025-11-07 07:59:03,807 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/layout.tsx
+2025-11-07 07:59:04,234 - Knowledge - INFO - [LLM_CALL] Completed: getInvoice.ts:chunk1, Duration: 19316ms, PromptTokens: 107334, CompletionTokens: 9526, Cost: $0.00000
+2025-11-07 07:59:04,454 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/getInvoice.ts
+2025-11-07 07:59:05,022 - Knowledge - INFO - [LLM_CALL] Completed: client.tsx:chunk1, Duration: 15033ms, PromptTokens: 109106, CompletionTokens: 9901, Cost: $0.00000
+2025-11-07 07:59:05,188 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/client.tsx
+2025-11-07 07:59:05,356 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/assets.tsx not successfully processed
+2025-11-07 07:59:05,539 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-logo-asset.tsx not successfully processed
+2025-11-07 07:59:05,696 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/upload-signature.asset.tsx not successfully processed
+2025-11-07 07:59:06,159 - Knowledge - INFO - Processing batch of 47 files
+2025-11-07 07:59:06,357 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/assets/page.tsx
+2025-11-07 07:59:06,567 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/layout.tsx
+2025-11-07 07:59:06,730 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/global-error.tsx
+2025-11-07 07:59:06,888 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blog/[slug]/page.tsx
+2025-11-07 07:59:07,082 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(marketing)/blogs/page.tsx
+2025-11-07 07:59:07,248 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(error)/error.tsx
+2025-11-07 07:59:07,464 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/globals.css
+2025-11-07 07:59:07,625 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/layout.tsx
+2025-11-07 07:59:07,797 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation.ts
+2025-11-07 07:59:07,971 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/routers/_app.ts
+2025-11-07 07:59:08,139 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/uploadImage.ts
+2025-11-07 07:59:08,382 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/index.ts
+2025-11-07 07:59:08,579 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/deleteImage.ts
+2025-11-07 07:59:08,747 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/cloudflare/listImages.ts
+2025-11-07 07:59:08,906 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/editInvoice.ts
+2025-11-07 07:59:09,077 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/getInvoice.ts
+2025-11-07 07:59:09,241 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/listInvoices.ts
+2025-11-07 07:59:09,459 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/updateInvoiceStatus.ts
+2025-11-07 07:59:09,545 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar-header.tsx after 90s
+2025-11-07 07:59:09,639 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/deleteInvoice.ts
+2025-11-07 07:59:09,763 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-user.tsx after 90s
+2025-11-07 07:59:09,849 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/index.ts
+2025-11-07 07:59:09,935 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/footer.tsx after 90s
+2025-11-07 07:59:10,037 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/services/invoice/insertInvoice.ts
+2025-11-07 07:59:10,147 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/our-sponser.tsx after 90s
+2025-11-07 07:59:10,241 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/server.tsx
+2025-11-07 07:59:10,335 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/hero.tsx after 90s
+2025-11-07 07:59:10,435 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/client.tsx
+2025-11-07 07:59:10,526 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/create-invoice.ts after 90s
+2025-11-07 07:59:10,617 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/procedures/authorizedProcedure.ts
+2025-11-07 07:59:10,806 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/awsS3Middleware.ts
+2025-11-07 07:59:10,969 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/middlewares/betterAuthMiddleware.ts
+2025-11-07 07:59:11,169 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/init.ts
+2025-11-07 07:59:11,352 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/transformer/index.ts
+2025-11-07 07:59:11,510 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/trpc/query-client.ts
+2025-11-07 07:59:11,686 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/instrumentation-client.ts
+2025-11-07 07:59:11,840 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/web-analytics.ts
+2025-11-07 07:59:12,047 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/neverthrow/index.ts
+2025-11-07 07:59:12,288 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/invoice.ts
+2025-11-07 07:59:12,462 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/indexdb/index.ts
+2025-11-07 07:59:12,703 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/common/invoice.ts
+2025-11-07 07:59:14,197 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/svg.ts
+2025-11-07 07:59:14,518 - Knowledge - INFO - [LLM_CALL] Completed: invoice-field-key-number-value-section.tsx:chunk1, Duration: 25886ms, PromptTokens: 111220, CompletionTokens: 10232, Cost: $0.00000
+2025-11-07 07:59:14,565 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/index.ts
+2025-11-07 07:59:14,721 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-number-value-section.tsx
+2025-11-07 07:59:14,839 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/auth.ts
+2025-11-07 07:59:15,303 - Knowledge - INFO - [LLM_CALL] Completed: invoice.tsx:chunk1, Duration: 21594ms, PromptTokens: 113526, CompletionTokens: 10634, Cost: $0.00000
+2025-11-07 07:59:15,308 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/types/sidebar.ts
+2025-11-07 07:59:15,507 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice.tsx
+2025-11-07 07:59:15,588 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/currency.ts
+2025-11-07 07:59:15,933 - Knowledge - INFO - [LLM_CALL] Completed: route.tsx:chunk1, Duration: 36977ms, PromptTokens: 115690, CompletionTokens: 10945, Cost: $0.00000
+2025-11-07 07:59:16,005 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/toast.tsx
+2025-11-07 07:59:16,096 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/og/route.tsx
+2025-11-07 07:59:16,186 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/errors.ts
+2025-11-07 07:59:16,861 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/success.ts
+2025-11-07 07:59:17,538 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/issues/index.ts
+2025-11-07 07:59:18,448 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/links.ts
+2025-11-07 07:59:18,923 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/pdf-fonts.ts
+2025-11-07 07:59:19,361 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/constants/indexed-db.ts
+2025-11-07 07:59:21,245 - Knowledge - INFO - [LLM_CALL] Completed: import-invoice.tsx:chunk1, Duration: 25629ms, PromptTokens: 118068, CompletionTokens: 11329, Cost: $0.00000
+2025-11-07 07:59:21,457 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/import-invoice.tsx
+2025-11-07 07:59:22,342 - Knowledge - INFO - [LLM_CALL] Completed: editInvoice.tsx:chunk1, Duration: 14503ms, PromptTokens: 119920, CompletionTokens: 11681, Cost: $0.00000
+2025-11-07 07:59:22,534 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/editInvoice.tsx
+2025-11-07 07:59:23,445 - Knowledge - INFO - [LLM_CALL] Completed: invoice-errors-modal.tsx:chunk1, Duration: 24832ms, PromptTokens: 122214, CompletionTokens: 12075, Cost: $0.00000
+2025-11-07 07:59:23,608 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-errors-modal.tsx
+2025-11-07 07:59:24,577 - Knowledge - INFO - [LLM_CALL] Completed: invoice-download-manager.tsx:chunk1, Duration: 50721ms, PromptTokens: 124374, CompletionTokens: 12682, Cost: $0.00000
+2025-11-07 07:59:24,765 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/instances/invoice/invoice-download-manager.tsx
+2025-11-07 07:59:25,230 - Knowledge - INFO - [LLM_CALL] Completed: invoice-options.tsx:chunk1, Duration: 22970ms, PromptTokens: 127414, CompletionTokens: 13265, Cost: $0.00000
+2025-11-07 07:59:25,402 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-options.tsx
+2025-11-07 07:59:25,906 - Knowledge - INFO - [LLM_CALL] Completed: invoice-field-key-string-value-section.tsx:chunk1, Duration: 39744ms, PromptTokens: 129278, CompletionTokens: 13558, Cost: $0.00000
+2025-11-07 07:59:26,092 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-string-value-section.tsx
+2025-11-07 07:59:26,635 - Knowledge - INFO - [LLM_CALL] Completed: invoice-image-selector-sheet.tsx:chunk1, Duration: 43472ms, PromptTokens: 132626, CompletionTokens: 13924, Cost: $0.00000
+2025-11-07 07:59:26,794 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-image-selector-sheet.tsx
+2025-11-07 07:59:27,159 - Knowledge - INFO - [LLM_CALL] Completed: invoice-form.tsx:chunk1, Duration: 20912ms, PromptTokens: 137818, CompletionTokens: 14424, Cost: $0.00000
+2025-11-07 07:59:27,314 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-form.tsx
+2025-11-07 07:59:27,813 - Knowledge - INFO - [LLM_CALL] Completed: invoice-preview.tsx:chunk1, Duration: 23342ms, PromptTokens: 141302, CompletionTokens: 14990, Cost: $0.00000
+2025-11-07 07:59:27,983 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-preview.tsx
+2025-11-07 07:59:28,275 - Knowledge - INFO - [LLM_CALL] Completed: invoice-items-section.tsx:chunk1, Duration: 36904ms, PromptTokens: 145106, CompletionTokens: 15431, Cost: $0.00000
+2025-11-07 07:59:28,429 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-items-section.tsx
+2025-11-07 07:59:28,631 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar-header.tsx not successfully processed
+2025-11-07 07:59:28,854 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-user.tsx not successfully processed
+2025-11-07 07:59:29,073 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 292, Duration: 0ms
+2025-11-07 07:59:29,284 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 211ms
+2025-11-07 07:59:29,469 - Knowledge - INFO - Progress: 53.7% | Files: 176/326 | Rate: 1.22 files/sec | Queue: 0
+2025-11-07 07:59:29,514 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/footer.tsx not successfully processed
+2025-11-07 07:59:29,738 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/our-sponser.tsx not successfully processed
+2025-11-07 07:59:29,924 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/hero.tsx not successfully processed
+2025-11-07 07:59:30,105 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/create-invoice.ts not successfully processed
+2025-11-07 07:59:30,531 - Knowledge - INFO - Processing batch of 44 files
+2025-11-07 07:59:30,700 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/navigation-item.tsx
+2025-11-07 07:59:30,887 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/index.ts
+2025-11-07 07:59:31,044 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-loading.tsx
+2025-11-07 07:59:31,252 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/pdf/pdf-error.tsx
+2025-11-07 07:59:31,410 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/features.tsx
+2025-11-07 07:59:31,624 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/landing/header.tsx
+2025-11-07 07:59:31,835 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/assets/logo-icon.tsx
+2025-11-07 07:59:32,000 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/zod-schemas/invoice/edit-invoice-page.ts
+2025-11-07 07:59:32,193 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/onedollarstats-provider.tsx
+2025-11-07 07:59:32,368 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/jotai-provider.tsx
+2025-11-07 07:59:32,527 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/react-scan-provider.tsx
+2025-11-07 07:59:32,689 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/pdf-worker-provider.tsx
+2025-11-07 07:59:32,846 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/tanstack-provider.tsx
+2025-11-07 07:59:33,021 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/posthog-provider.tsx
+2025-11-07 07:59:33,183 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/index.ts
+2025-11-07 07:59:33,399 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/providers/openpanel-provider.tsx
+2025-11-07 07:59:33,636 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/instances/invoice/invoice-download-manager.tsx
+2025-11-07 07:59:33,790 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/atoms/invoice-atom.ts
+2025-11-07 07:59:33,937 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/global/indexdb/index.ts
+2025-11-07 07:59:34,134 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/sitemap.ts
+2025-11-07 07:59:34,307 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/page.tsx
+2025-11-07 07:59:34,507 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/auth/[...all]/route.ts
+2025-11-07 07:59:34,676 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/og/route.tsx
+2025-11-07 07:59:34,841 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/api/trpc/[trpc]/route.ts
+2025-11-07 07:59:34,988 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/fonts.css
+2025-11-07 07:59:35,190 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/page.tsx
+2025-11-07 07:59:35,369 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/invoices/invoices.tsx
+2025-11-07 07:59:35,572 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-templates.tsx
+2025-11-07 07:59:35,769 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-image-selector-sheet.tsx
+2025-11-07 07:59:35,966 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-string-value-section.tsx
+2025-11-07 07:59:36,115 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-field-key-number-value-section.tsx
+2025-11-07 07:59:36,276 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceHelpers/invoice-items-section.tsx
+2025-11-07 07:59:36,436 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/page.tsx
+2025-11-07 07:59:36,636 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice.tsx
+2025-11-07 07:59:36,857 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/import-invoice.tsx
+2025-11-07 07:59:37,055 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-errors-modal.tsx
+2025-11-07 07:59:37,240 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-tab-switch.tsx
+2025-11-07 07:59:37,412 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoiceOptionHelpers/invoice-options.tsx
+2025-11-07 07:59:37,578 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-preview.tsx
+2025-11-07 07:59:37,792 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/create/invoice/invoice-form.tsx
+2025-11-07 07:59:37,985 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/page.tsx
+2025-11-07 07:59:38,172 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/page.tsx
+2025-11-07 07:59:38,337 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/editInvoice.tsx
+2025-11-07 07:59:38,504 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/app/(dashboard)/edit/[type]/[id]/page.tsx
+2025-11-07 07:59:42,233 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 293, Duration: 0ms
+2025-11-07 07:59:42,399 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 166ms
+2025-11-07 07:59:42,552 - Knowledge - INFO - Progress: 66.6% | Files: 217/326 | Rate: 1.38 files/sec | Queue: 0
+2025-11-07 07:59:45,903 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-file-upload.ts after 90s
+2025-11-07 07:59:46,080 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/default.tsx after 90s
+2025-11-07 07:59:46,264 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/vercel.tsx after 90s
+2025-11-07 07:59:46,439 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/deleteInvoiceModal.tsx after 90s
+2025-11-07 07:59:46,612 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/updateStatusModal.tsx after 90s
+2025-11-07 07:59:46,774 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/index.tsx after 90s
+2025-11-07 07:59:46,968 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/badge.tsx after 90s
+2025-11-07 07:59:47,130 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-color-picker.tsx after 90s
+2025-11-07 07:59:47,291 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-textarea.tsx after 90s
+2025-11-07 07:59:47,469 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-image-input.tsx after 90s
+2025-11-07 07:59:47,688 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-input.tsx after 90s
+2025-11-07 07:59:47,860 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-select.tsx after 90s
+2025-11-07 07:59:48,020 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form.tsx after 90s
+2025-11-07 07:59:48,184 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-signature-input.tsx after 90s
+2025-11-07 07:59:48,340 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-date-picker.tsx after 90s
+2025-11-07 07:59:48,536 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/breadcrumb.tsx after 90s
+2025-11-07 07:59:48,685 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table.tsx after 90s
+2025-11-07 07:59:48,858 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dropdown-menu.tsx after 90s
+2025-11-07 07:59:49,010 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/command.tsx after 90s
+2025-11-07 07:59:49,214 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-data-table-filters.tsx after 90s
+2025-11-07 07:59:49,387 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-operator.tsx after 90s
+2025-11-07 07:59:49,545 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-selector.tsx after 90s
+2025-11-07 07:59:49,740 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-value.tsx after 90s
+2025-11-07 07:59:49,902 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/active-filters.tsx after 90s
+2025-11-07 07:59:50,074 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/operators.ts after 90s
+2025-11-07 07:59:50,243 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/types.ts after 90s
+2025-11-07 07:59:50,440 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/filters.ts after 90s
+2025-11-07 07:59:50,600 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/helpers.ts after 90s
+2025-11-07 07:59:50,831 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/array.ts after 90s
+2025-11-07 07:59:51,057 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/debounce.ts after 90s
+2025-11-07 07:59:51,228 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/filter-fns.ts after 90s
+2025-11-07 07:59:51,395 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/index.tsx after 90s
+2025-11-07 07:59:51,630 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dialog.tsx after 90s
+2025-11-07 07:59:51,821 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/button.tsx after 90s
+2025-11-07 07:59:52,014 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/select.tsx after 90s
+2025-11-07 07:59:52,217 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/resizable.tsx after 90s
+2025-11-07 07:59:52,376 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/table.tsx after 90s
+2025-11-07 07:59:52,591 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sheet.tsx after 90s
+2025-11-07 07:59:52,794 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/signature-input-modal.tsx after 90s
+2025-11-07 07:59:52,958 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/image-input.tsx after 90s
+2025-11-07 07:59:53,128 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/sheet-image-selector-trigger.tsx after 90s
+2025-11-07 07:59:53,594 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sidebar.tsx after 90s
+2025-11-07 07:59:54,328 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/calendar.tsx after 90s
+2025-11-07 07:59:54,694 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/switch.tsx after 90s
+2025-11-07 07:59:54,893 - Knowledge - ERROR - Timeout processing /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/accordion.tsx after 90s
+2025-11-07 07:59:56,068 - Knowledge - INFO - [LLM_CALL] Completed: blog-content.tsx:chunk1, Duration: 11144ms, PromptTokens: 147532, CompletionTokens: 15722, Cost: $0.00000
+2025-11-07 07:59:56,270 - Knowledge - INFO - done ingest for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-content.tsx
+2025-11-07 07:59:56,483 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-file-upload.ts not successfully processed
+2025-11-07 07:59:56,684 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/default.tsx not successfully processed
+2025-11-07 07:59:56,877 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/vercel.tsx not successfully processed
+2025-11-07 07:59:57,090 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/deleteInvoiceModal.tsx not successfully processed
+2025-11-07 07:59:57,252 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/updateStatusModal.tsx not successfully processed
+2025-11-07 07:59:57,430 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/invoices/index.tsx not successfully processed
+2025-11-07 07:59:57,624 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/badge.tsx not successfully processed
+2025-11-07 07:59:57,842 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-color-picker.tsx not successfully processed
+2025-11-07 07:59:58,006 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-textarea.tsx not successfully processed
+2025-11-07 07:59:58,190 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-image-input.tsx not successfully processed
+2025-11-07 07:59:58,385 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-input.tsx not successfully processed
+2025-11-07 07:59:58,590 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-select.tsx not successfully processed
+2025-11-07 07:59:58,751 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form.tsx not successfully processed
+2025-11-07 07:59:58,904 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-signature-input.tsx not successfully processed
+2025-11-07 07:59:59,066 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-date-picker.tsx not successfully processed
+2025-11-07 07:59:59,235 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/breadcrumb.tsx not successfully processed
+2025-11-07 07:59:59,387 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table.tsx not successfully processed
+2025-11-07 07:59:59,596 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dropdown-menu.tsx not successfully processed
+2025-11-07 07:59:59,797 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/command.tsx not successfully processed
+2025-11-07 08:00:00,001 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-data-table-filters.tsx not successfully processed
+2025-11-07 08:00:00,185 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-operator.tsx not successfully processed
+2025-11-07 08:00:00,374 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-selector.tsx not successfully processed
+2025-11-07 08:00:00,519 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-value.tsx not successfully processed
+2025-11-07 08:00:00,673 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/active-filters.tsx not successfully processed
+2025-11-07 08:00:00,865 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/operators.ts not successfully processed
+2025-11-07 08:00:01,053 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/types.ts not successfully processed
+2025-11-07 08:00:01,255 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/core/filters.ts not successfully processed
+2025-11-07 08:00:01,471 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/helpers.ts not successfully processed
+2025-11-07 08:00:01,660 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/array.ts not successfully processed
+2025-11-07 08:00:01,842 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/debounce.ts not successfully processed
+2025-11-07 08:00:02,062 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/filter-fns.ts not successfully processed
+2025-11-07 08:00:02,273 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/index.tsx not successfully processed
+2025-11-07 08:00:02,488 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sheet.tsx not successfully processed
+2025-11-07 08:00:02,732 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/resizable.tsx not successfully processed
+2025-11-07 08:00:02,925 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/button.tsx not successfully processed
+2025-11-07 08:00:03,147 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/table.tsx not successfully processed
+2025-11-07 08:00:03,345 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/dialog.tsx not successfully processed
+2025-11-07 08:00:03,539 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/select.tsx not successfully processed
+2025-11-07 08:00:03,758 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/signature-input-modal.tsx not successfully processed
+2025-11-07 08:00:03,935 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/sheet-image-selector-trigger.tsx not successfully processed
+2025-11-07 08:00:04,128 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/image/image-input.tsx not successfully processed
+2025-11-07 08:00:04,329 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/sidebar.tsx not successfully processed
+2025-11-07 08:00:04,519 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/calendar.tsx not successfully processed
+2025-11-07 08:00:04,695 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/switch.tsx not successfully processed
+2025-11-07 08:00:04,872 - Knowledge - WARNING - File /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/accordion.tsx not successfully processed
+2025-11-07 08:00:05,158 - Knowledge - INFO - Processing batch of 55 files
+2025-11-07 08:00:05,323 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/env-links.sh
+2025-11-07 08:00:05,542 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-github-stars.ts
+2025-11-07 08:00:05,756 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-breakpoint.ts
+2025-11-07 08:00:05,938 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-user.ts
+2025-11-07 08:00:06,140 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-idb-query.ts
+2025-11-07 08:00:06,398 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-analytics.ts
+2025-11-07 08:00:06,605 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/hooks/use-mobile.ts
+2025-11-07 08:00:06,796 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/pdf/index.ts
+2025-11-07 08:00:06,992 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/table-columns/theme-switch.tsx
+2025-11-07 08:00:07,152 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/slider.tsx
+2025-11-07 08:00:07,346 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tooltip.tsx
+2025-11-07 08:00:07,559 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/popover.tsx
+2025-11-07 08:00:07,716 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/checkbox.tsx
+2025-11-07 08:00:07,898 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-button.tsx
+2025-11-07 08:00:08,070 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/form/form-row.tsx
+2025-11-07 08:00:08,273 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/generate-breadcrumb.tsx
+2025-11-07 08:00:08,478 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/avatar.tsx
+2025-11-07 08:00:08,650 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-debounce-callback.tsx
+2025-11-07 08:00:08,849 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/hooks/use-unmount.tsx
+2025-11-07 08:00:09,013 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-subject.tsx
+2025-11-07 08:00:09,186 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/filter-actions.tsx
+2025-11-07 08:00:09,390 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/components/data-table-filter.tsx
+2025-11-07 08:00:09,570 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/ui/debounced-input.tsx
+2025-11-07 08:00:09,747 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/index.tsx
+2025-11-07 08:00:09,935 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/locales/en.json
+2025-11-07 08:00:10,103 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/i18n.ts
+2025-11-07 08:00:10,293 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/lib/memo.ts
+2025-11-07 08:00:10,500 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/data-table-filter/integrations/tanstack-table/filter-fns.ts
+2025-11-07 08:00:10,702 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/skeleton.tsx
+2025-11-07 08:00:10,861 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/scroll-area.tsx
+2025-11-07 08:00:11,033 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/icon-placeholder.tsx
+2025-11-07 08:00:11,212 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/posthog-analytics.tsx
+2025-11-07 08:00:11,397 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/separator.tsx
+2025-11-07 08:00:11,556 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/fancy-badges.tsx
+2025-11-07 08:00:11,741 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/modern-card.tsx
+2025-11-07 08:00:11,940 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/alert.tsx
+2025-11-07 08:00:12,108 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/open-source-badge.tsx
+2025-11-07 08:00:12,367 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/label.tsx
+2025-11-07 08:00:12,560 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/input.tsx
+2025-11-07 08:00:12,745 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/textarea.tsx
+2025-11-07 08:00:12,918 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/tabs.tsx
+2025-11-07 08:00:13,102 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/collapsible.tsx
+2025-11-07 08:00:13,314 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/ui/card.tsx
+2025-11-07 08:00:13,487 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-card.tsx
+2025-11-07 08:00:13,659 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-hero.tsx
+2025-11-07 08:00:13,862 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/image.tsx
+2025-11-07 08:00:14,057 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/headings.tsx
+2025-11-07 08:00:14,233 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/code.tsx
+2025-11-07 08:00:14,427 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/points.tsx
+2025-11-07 08:00:14,647 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/index.tsx
+2025-11-07 08:00:14,828 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/components/link.tsx
+2025-11-07 08:00:14,991 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-content.tsx
+2025-11-07 08:00:15,220 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-footer.tsx
+2025-11-07 08:00:15,424 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/marketing/blogs/blog-header.tsx
+2025-11-07 08:00:15,620 - Knowledge - INFO - process ingested knowledge for /app/data/kaviademo4200/40498/b19508n/invoicely-40498/apps/web/src/components/layout/sidebar/dashboard-sidebar.tsx
+2025-11-07 08:00:19,586 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 292, Duration: 0ms
+2025-11-07 08:00:19,744 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 159ms
+2025-11-07 08:00:19,903 - Knowledge - INFO - Progress: 83.4% | Files: 272/326 | Rate: 1.39 files/sec | Queue: 0
+2025-11-07 08:00:20,080 - Knowledge - INFO - Knowledge creation complete
+2025-11-07 08:00:20,250 - Knowledge - INFO - ==================================================
+2025-11-07 08:00:20,428 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-07 08:00:20,591 - Knowledge - INFO - ==================================================
+2025-11-07 08:00:20,782 - Knowledge - INFO - Total processing time: 195.76 seconds (3.26 minutes)
+2025-11-07 08:00:20,978 - Knowledge - INFO - Files processed: 0
+2025-11-07 08:00:21,132 - Knowledge - INFO - Processing rate: 0.00 files/second
+2025-11-07 08:00:21,302 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2025-11-07 08:00:21,482 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2025-11-07 08:00:21,655 - Knowledge - INFO - LLM Processing: 1225.34s (625.9%)
+2025-11-07 08:00:21,809 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2025-11-07 08:00:21,960 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2025-11-07 08:00:22,136 - Knowledge - INFO - WebSocket Communication: 1.12s (0.6%)
+2025-11-07 08:00:22,288 - Knowledge - INFO - 
+[LLM_STATS]
+2025-11-07 08:00:22,449 - Knowledge - INFO - Total LLM calls: 52
+2025-11-07 08:00:22,647 - Knowledge - INFO - Average LLM response time: 23564ms
+2025-11-07 08:00:22,799 - Knowledge - INFO - Average prompt tokens: 76905.8
+2025-11-07 08:00:22,961 - Knowledge - INFO - Average completion tokens: 7030.4
+2025-11-07 08:00:23,144 - Knowledge - INFO - Total prompt tokens: 3999104
+2025-11-07 08:00:23,315 - Knowledge - INFO - Total completion tokens: 365581
+2025-11-07 08:00:23,516 - Knowledge - INFO - Total LLM cost: $0.0000
+2025-11-07 08:00:23,721 - Knowledge - INFO - 
+[DATABASE_STATS]
+2025-11-07 08:00:23,885 - Knowledge - INFO - MongoDB operations: 0
+2025-11-07 08:00:24,085 - Knowledge - INFO - Redis operations: 0
+2025-11-07 08:00:24,278 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2025-11-07 08:00:24,430 - Knowledge - INFO - WebSocket messages sent: 10
+2025-11-07 08:00:24,587 - Knowledge - INFO - Average message size: 146.0 bytes
+2025-11-07 08:00:24,757 - Knowledge - INFO - 
+[WORKER_STATS]
+2025-11-07 08:00:24,950 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2025-11-07 08:00:25,103 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2025-11-07 08:00:25,252 - Knowledge - INFO - ==================================================
+2025-11-07 08:00:25,392 - Knowledge - INFO - ==================================================
+2025-11-07 08:00:25,545 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2025-11-07 08:00:25,779 - Knowledge - INFO - ==================================================
+2025-11-07 08:00:25,942 - Knowledge - INFO - Total processing time: 200.96 seconds (3.35 minutes)
+2025-11-07 08:00:26,108 - Knowledge - INFO - Files processed: 272 of 326
+2025-11-07 08:00:26,274 - Knowledge - INFO - Processing rate: 1.35 files/second
+2025-11-07 08:00:26,489 - Knowledge - INFO - WebSocket messages sent: 5
+2025-11-07 08:00:26,672 - Knowledge - INFO - MongoDB operations: 272
+2025-11-07 08:00:26,835 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2025-11-07 08:00:26,986 - Knowledge - INFO - LLM costs: $0.0210
+2025-11-07 08:00:27,149 - Knowledge - INFO - Prompt tokens: 147532
+2025-11-07 08:00:27,367 - Knowledge - INFO - Completion tokens: 15722
+2025-11-07 08:00:27,533 - Knowledge - INFO - Updating org costs, total cost: 0.021042000000000005
+2025-11-07 08:00:28,743 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 287, Duration: 0ms
+2025-11-07 08:00:28,903 - Knowledge - INFO - Saving knowledge to Redis...
+2025-11-07 08:00:29,153 - Knowledge - INFO - Knowledge saved to Redis successfully
